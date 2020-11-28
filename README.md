@@ -22,5 +22,31 @@ La prueba consiste en culminar diversas características de un sistema de compra
 - Modelo Seller heredado de User con un globalScope que solo deuvelve usuarios con productos en venta
 
 ### Diagrama de modelos y relaciones
+
+*Nota*: El modelo category no se implementó y algunos campos fueron removidos por simplicidad.
+
 ![Modelos y relaciones](https://i.ibb.co/4tDq4xV/photo-2020-11-27-18-10-47.jpg "Modelos y relaciones")
+
+## Por hacer
+
+### Endpoints
+
+#### Endpoint para buyers
+
+- [ ] GET /buyers
+- [ ] GET /buyers/:id (Mostrar con sus transacciones)
+
+#### Crear endpoints para sellers
+- [ ] GET /sellers
+- [ ] GET /sellers/:id (Mostrar con sus productos en venta)
+- [ ] POST /sellers/product (Crear producto a partir del usuario en autenticado)
+
+#### Crear endpoints para products
+*Nota*: Los productos deben tener una propiedad computada `status` que contendrá el valor "In Stock" o "Sold Out" dependiendo del número en su propiedad `quantity`
+
+- [ ] GET /products
+    - Con parámetro `show_products_without_stock` para decidir si mostrar también los productos sin stock
+- [ ] GET /products/:id
+- [ ] POST /products/:id/buy (Vender un producto a partir del usuario autenticado )
+    - Crear restricción que no permita crear una transacción si la cantidad productos a comprar supera el número de productos en stock
 
