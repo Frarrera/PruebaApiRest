@@ -10,10 +10,10 @@ trait ApiResponse
     /**
      * Show one entity
      *
-     * @param Model $resource
+     * @param $resource
      * @param int $code
      */
-    public function showOne(Model $entity, int $code = 200)
+    public function showOne($entity, int $code = 200)
     {
         return response()->json([
             'data' => $entity
@@ -23,10 +23,10 @@ trait ApiResponse
     /**
      * Show multiples entities
      *
-     * @param Collection $entities
+     * @param array $entities
      * @param int $code
      */
-    public function showAll(Collection $entities, int $code = 200)
+    public function showAll(array $entities, int $code = 200)
     {
         return response()->json([
             'data' => $entities
