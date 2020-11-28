@@ -17,6 +17,7 @@ La prueba consiste en culminar diversas características de un sistema de compra
 - Migraciones y modelos del sistema
 - Modelo Buyer heredado de User con un globalScope que solo devuelve usuarios con transacciones
 - Modelo Seller heredado de User con un globalScope que solo deuvelve usuarios con productos en venta
+- Factories para crear 20 productos, 4 usuarios y 10 transacciones
 
 ### Diagrama de modelos y relaciones
 
