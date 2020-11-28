@@ -1,17 +1,14 @@
-# Prueba de habilidades creando API's con Laravel
+# Prueba de habilidades creando APIs REST con Laravel
 
-La siguiente prueba pretender evaluar las habilidades y conocimientos creando API's con Laravel. Además de eso se busca conocer la capacidad del evaluado adaptándose a un proyecto avanzado, comprendiendo el código y creando soluciones a partir de el.
+La siguiente prueba pretender evaluar las habilidades y conocimientos creando APIs REST con Laravel. Además de eso se busca conocer la capacidad del evaluado adaptándose a un proyecto existente, comprendiendo el código y creando soluciones a partir de el.
 
 La prueba consiste en culminar diversas características de un sistema de compra y venta de productos con la base de la API previamente programada. Este sistema busca realizar las siguientes acciones:
 
-- Registrar usuarios nuevos mediante la API
 - Restringir el acceso a los diversos endpoints para que solo usuarios autenticados puedan interactuar con ellos
 - Crear y listar productos
 - Listar únicamente los productos con stock disponible
 - Comprar y vender productos a partir del usuario en sesión
 - Listar los usuarios vendedores del sistema
-- Listar los usuarios compradores del sistema
-- Listar las transacciones de un producto perteneciente a un usuario
 - Listar los productos en venta pertenecientes a un usuario
 ## La base de la API comprende:
 
@@ -25,7 +22,7 @@ La prueba consiste en culminar diversas características de un sistema de compra
 
 *Nota*: El modelo category no se implementó y algunos campos fueron removidos por simplicidad.
 
-![Modelos y relaciones](https://i.ibb.co/4tDq4xV/photo-2020-11-27-18-10-47.jpg "Modelos y relaciones")
+![Modelos y relaciones](https://i.ibb.co/LnP2jx2/Screenshot-2.png "Modelos y relaciones")
 
 ## Por hacer
 
