@@ -27,7 +27,7 @@ class TransactionFactory extends Factory
         $product = $products[random_int(0, 19)];
 
         return [
-            'quantity' =>  random_int(1, 20) > $product->quantity ? 1 : random_int(1, 10),
+            'quantity' =>  random_int(1, 20) > $product->quantity ? 1 : random_int(1, 20),
             'product_id' => $product->id,
             'user_id' => User::all()[random_int(0, 3)]->id,
         ];
