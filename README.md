@@ -22,5 +22,5 @@ La prueba consiste en culminar diversas características de un sistema de compra
 - Modelo Seller heredado de User con un globalScope que solo deuvelve usuarios con productos en venta
 
 ### Diagrama de modelos y relaciones
-![Modelos y relaciones](https://ibb.co/6wpMD5W "Modelos y relaciones")
+![Modelos y relaciones](https://i.ibb.co/4tDq4xV/photo-2020-11-27-18-10-47.jpg "Modelos y relaciones")
 
