@@ -38,6 +38,7 @@ La prueba consiste en culminar diversas características de un sistema de compra
 - [ ] GET /sellers
 - [ ] GET /sellers/:id (Mostrar con sus productos en venta)
 - [ ] POST /sellers/product (Crear producto a partir del usuario en autenticado)
+    - Recibir en el body de la petición name, description y quantity
 
 #### Crear endpoints para products
 *Nota*: Los productos deben tener una propiedad computada `status` que contendrá el valor "In Stock" o "Sold Out" dependiendo del número en su propiedad `quantity`
@@ -46,5 +47,6 @@ La prueba consiste en culminar diversas características de un sistema de compra
     - Con parámetro `show_products_without_stock` para decidir si mostrar también los productos sin stock
 - [ ] GET /products/:id
 - [ ] POST /products/:id/buy (Vender un producto a partir del usuario autenticado )
+    - Recibir en el body de la petición el campo quantity
     - Crear restricción que no permita crear una transacción si la cantidad productos a comprar supera el número de productos en stock
 
