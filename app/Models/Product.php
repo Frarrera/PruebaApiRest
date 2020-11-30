@@ -36,4 +36,21 @@ class Product extends Model
     {
         return $this->hasMany(Transaction::class);
     }
+
+    //
+    /**
+     * Status of the product
+     */
+    public function getStatusAttribute(){
+        return $this->quantity > 0 ? "In Stock" : "Sold Out";
+    }
+
+    //scopes
+
+    /**
+     * return only products with quantity greater than 0
+     */
+    public function scopeInStock($query){
+        return $query->where('quantity','>','0');
+    }
 }

@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Buyer extends User
 {
     use HasFactory;
+    protected $table = "users";
+    protected $key= "id";
 
     /**
      * Boot method
@@ -26,6 +28,6 @@ class Buyer extends User
      */
     public function transactions()
     {
-        return $this->hasMany(Transaction::class);
+        return $this->hasMany(Transaction::class,"user_id");
     }
 }

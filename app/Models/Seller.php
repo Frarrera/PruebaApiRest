@@ -8,6 +8,10 @@ class Seller extends User
 {
     use HasFactory;
 
+    protected $table = 'users';
+    protected $key = 'id';
+    
+
     /**
      * Boot method
      */
@@ -25,6 +29,6 @@ class Seller extends User
      */
     public function products()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Product::class,'user_id');
     }
 }
